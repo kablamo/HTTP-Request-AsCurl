@@ -56,7 +56,7 @@ HTTP::Request::AsCurl - Generate a curl command from an HTTP::Request object.
     say join "\n", $request->as_curl;
     # curl --dump-header - -XPOST "api.earth.defense/weapon1" \
     # --data 'target=mothership' \
-    # --data 'when=now
+    # --data 'when=now'
 
 =head1 DESCRIPTION
 

@@ -1,5 +1,5 @@
 {
-   "abstract" : "Generate curl commands from an HTTP::Request object.",
+   "abstract" : "Generate a curl command from an HTTP::Request object.",
    "author" : [
       "Eric Johnson <eric.git@iijo.org>"
    ],

@@ -1,6 +1,5 @@
 use Test::Most;
 
-use DDP;
 use HTTP::Request::Common;
 use HTTP::Request::AsCurl;
 

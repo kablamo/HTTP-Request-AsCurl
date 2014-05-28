@@ -1,14 +1,28 @@
+
 # NAME
 
 HTTP::Request::AsCurl - It's new $module
 
 # SYNOPSIS
 
+    use HTTP::Request::Common;
     use HTTP::Request::AsCurl;
+
+    my $request = POST('api.earth.defense/weapon1', { 
+        target => 'mothership', 
+        when   => 'now' 
+    });
+
+    say join "\n", $request->as_curl;
+    # curl --dump-header - -XPOST "api.earth.defense/weapon1" \
+    # --data 'target=mothership' \
+    # --data 'when=now
 
 # DESCRIPTION
 
-HTTP::Request::AsCurl is ...
+This module is a bit naughty because it injects an as\_curl() method into the
+HTTP::Request namespace.  I only use it for debugging.  Perhaps that makes it
+ok.
 
 # LICENSE
 

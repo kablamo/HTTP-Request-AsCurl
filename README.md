@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/kablamo/HTTP-Request-AsCurl.png?branch=master)](https://travis-ci.org/kablamo/HTTP-Request-AsCurl)
 # NAME
 
 HTTP::Request::AsCurl - Generate a curl command from an HTTP::Request object.
@@ -21,8 +21,8 @@ HTTP::Request::AsCurl - Generate a curl command from an HTTP::Request object.
 # DESCRIPTION
 
 This module is a bit naughty because it injects an as\_curl() method into the
-HTTP::Request namespace.  I only use it for debugging.  Perhaps that makes it
-ok.
+HTTP::Request namespace.  I use it for debugging REST APIs.  Perhaps that makes
+it ok.
 
 This module also handles headers and basic authentication.
 

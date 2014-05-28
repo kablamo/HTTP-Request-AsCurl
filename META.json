@@ -56,5 +56,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/kablamo/HTTP-Request-AsCurl/issues"
+      },
+      "homepage" : "https://github.com/kablamo/HTTP-Request-AsCurl",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/kablamo/HTTP-Request-AsCurl.git",
+         "web" : "https://github.com/kablamo/HTTP-Request-AsCurl"
+      }
+   },
    "version" : "0.01"
 }

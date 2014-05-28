@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Generate curl commands from an HTTP::Request object.",
    "author" : [
       "Eric Johnson <eric.git@iijo.org>"
    ],

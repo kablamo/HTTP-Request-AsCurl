@@ -41,7 +41,7 @@ __END__
 
 =head1 NAME
 
-HTTP::Request::AsCurl - Generate curl commands from an HTTP::Request object.
+HTTP::Request::AsCurl - Generate a curl command from an HTTP::Request object.
 
 =head1 SYNOPSIS
 

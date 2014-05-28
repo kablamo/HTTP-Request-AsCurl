@@ -1,7 +1,7 @@
 
 # NAME
 
-HTTP::Request::AsCurl - It's new $module
+HTTP::Request::AsCurl - Generate curl commands from an HTTP::Request object.
 
 # SYNOPSIS
 
@@ -23,6 +23,8 @@ HTTP::Request::AsCurl - It's new $module
 This module is a bit naughty because it injects an as\_curl() method into the
 HTTP::Request namespace.  I only use it for debugging.  Perhaps that makes it
 ok.
+
+This module also handles headers and basic authentication.
 
 # LICENSE
 

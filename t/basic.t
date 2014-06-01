@@ -54,7 +54,10 @@ for my $test (@tests) {
         ? $test->{request}->()
         : $test->{request};
 
-    my $name = $test->{name} // $request->method . " " . $request->uri;
+    # Do not use // operator which is only available in perl v5.10+
+    my $name = defined $test->{name} 
+        ? $test->{name}
+        : $request->method . " " . $request->uri;
 
     subtest $name => sub {
         is_deeply [$request->as_curl], $test->{expected};

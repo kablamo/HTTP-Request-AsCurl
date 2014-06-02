@@ -8,6 +8,20 @@ DISTRIBUTIONS
       Algorithm::DiffOld 1.1
     requirements:
       ExtUtils::MakeMaker 0
+  Capture-Tiny-0.24
+    pathname: D/DA/DAGOLDEN/Capture-Tiny-0.24.tar.gz
+    provides:
+      Capture::Tiny 0.24
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.17
+      File::Spec 0
+      File::Temp 0
+      IO::Handle 0
+      Scalar::Util 0
+      strict 0
+      warnings 0
   Class-Data-Inheritable-0.08
     pathname: T/TM/TMTM/Class-Data-Inheritable-0.08.tar.gz
     provides:
@@ -50,6 +64,14 @@ DISTRIBUTIONS
       overload 0
       strict 0
       warnings 0
+  Exporter-Tiny-0.038
+    pathname: T/TO/TOBYINK/Exporter-Tiny-0.038.tar.gz
+    provides:
+      Exporter::Shiny 0.038
+      Exporter::Tiny 0.038
+    requirements:
+      ExtUtils::MakeMaker 6.17
+      perl 5.006001
   HTTP-Date-6.02
     pathname: G/GA/GAAS/HTTP-Date-6.02.tar.gz
     provides:
@@ -164,6 +186,12 @@ DISTRIBUTIONS
       Text::ParseWords 0
       perl 5.006001
       version 0.87
+  String-ShellQuote-1.04
+    pathname: R/RO/ROSCH/String-ShellQuote-1.04.tar.gz
+    provides:
+      String::ShellQuote 1.04
+    requirements:
+      ExtUtils::MakeMaker 0
   Sub-Uplevel-0.24
     pathname: D/DA/DAGOLDEN/Sub-Uplevel-0.24.tar.gz
     provides:
@@ -316,6 +344,17 @@ DISTRIBUTIONS
       Algorithm::Diff 1.19
       Exporter 0
       ExtUtils::MakeMaker 0
+  Try-Tiny-0.22
+    pathname: D/DO/DOY/Try-Tiny-0.22.tar.gz
+    provides:
+      Try::Tiny 0.22
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.30
+      constant 0
+      strict 0
+      warnings 0
   URI-1.60
     pathname: G/GA/GAAS/URI-1.60.tar.gz
     provides:
@@ -377,3 +416,18 @@ DISTRIBUTIONS
       Test 0
       Test::More 0
       perl 5.008001
+  Win32-ShellQuote-0.002001
+    pathname: H/HA/HAARG/Win32-ShellQuote-0.002001.tar.gz
+    provides:
+      Win32::ShellQuote 0.002001
+    requirements:
+      Capture::Tiny 0.12
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.30
+      File::Basename 0
+      File::Spec 0
+      Test::More 0.94
+      Try::Tiny 0
+      strict 0
+      warnings 0

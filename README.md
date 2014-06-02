@@ -3,28 +3,57 @@
 
 HTTP::Request::AsCurl - Generate a curl command from an HTTP::Request object.
 
+
+
 # SYNOPSIS
 
     use HTTP::Request::Common;
-    use HTTP::Request::AsCurl;
+    use HTTP::Request::AsCurl qw/as_curl/;
 
     my $request = POST('api.earth.defense/weapon1', { 
         target => 'mothership', 
         when   => 'now' 
     });
 
-    say join "\n", $request->as_curl;
-    # curl --dump-header - -XPOST "api.earth.defense/weapon1" \
-    # --data 'target=mothership' \
-    # --data 'when=now
+    system as_curl($request);
+
+    print as_curl($request, pretty => 1, newline => "\n", shell => 'bourne');
+    # curl \
+    # --request POST api.earth.defense/weapon1 \
+    # --dump-header - \
+    # --data target=mothership \
+    # --data when=now
+
+
 
 # DESCRIPTION
 
-This module is a bit naughty because it injects an as\_curl() method into the
-HTTP::Request namespace.  I use it for debugging REST APIs.  Perhaps that makes
-it ok.
+This module converts an HTTP::Request object to a curl command.  It can be used
+for debugging REST APIs. 
 
-This module also handles headers and basic authentication.
+It handles headers and basic authentication.
+
+
+
+# METHODS
+
+## as\_curl($request, %params)
+
+Accepts an HTTP::Request object and converts it to a curl command.  If there
+are no `%params`, `as_curl()` returns the cmd as an array suitable for being
+passed to system().  
+
+If there are `%params`, `as_curl()` returns a formatted string.  The string's
+format defaults to using "\\n" for newlines and escaping the curl command using
+bourne shell rules unless you are on a win32 system in which case it defaults
+to using win32 cmd.exe escaping rules.
+
+Available params are as follows
+
+    newline: defaults to "\n"
+    shell:   currently available options are 'bourne' and 'win32'
+
+
 
 # LICENSE
 
@@ -32,6 +61,8 @@ Copyright (C) Eric Johnson.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
+
+
 
 # AUTHOR
 

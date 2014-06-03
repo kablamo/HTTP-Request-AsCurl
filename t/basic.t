@@ -73,8 +73,8 @@ for my $test (@tests) {
 
     subtest $name => sub {
         is_deeply [as_curl($request)], $test->{array};
-        is as_curl($request, pretty => 1                  ), $test->{bourne};
-        is as_curl($request, pretty => 1, shell => 'win32'), $test->{win32};
+        is as_curl($request, pretty => 1  shell => 'bourne'), $test->{bourne};
+        is as_curl($request, pretty => 1, shell => 'win32'),  $test->{win32};
     };
 
 }

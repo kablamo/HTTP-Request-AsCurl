@@ -2,13 +2,18 @@ Revision history for Perl extension HTTP-Request-AsCurl
 
 {{$NEXT}}
 
+0.03 2014-06-03T12:04:07Z
+
+    - Minor fix for tests so they pass on win32 systems
+
 0.02 2014-06-02T10:08:28Z
 
-    - removed namespaced injection
-    - return value suitable for system()
-    - added a 'pretty' printing option
+    - Major user interface changes (listed below)
+    - Removed namespaced injection
+    - Return value suitable for system()
+    - Added a 'pretty' printing option
 
 0.01 2014-05-28T02:46:10Z
 
-    - original version
+    - Original version
 
